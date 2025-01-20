@@ -1,0 +1,50 @@
+{
+  "name": "str-utils",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./lib-esm/index.js",
+  "type": "module",
+  "module": "./lib-esm/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib",
+    "lib-esm",
+    "src"
+  ],
+  "scripts": {
+    "build": "npm run tsc && cheminfo-build --entry lib-esm/index.js --root SH",
+    "check-types": "tsc --noEmit",
+    "clean": "rimraf dist lib lib-esm types",
+    "eslint": "eslint src --cache",
+    "eslint-fix": "npm run eslint -- --fix",
+    "prepack": "npm run tsc",
+    "prettier": "prettier --check src",
+    "prettier-write": "prettier --write src",
+    "start": "npx tsx src/scripts/runBatch.ts",
+    "test": "npm run check-types && npm run eslint && npm run prettier && npm run test-only",
+    "test-only": "vitest run --coverage",
+    "tsc": "npm run clean && npm run tsc-cjs && npm run tsc-esm",
+    "tsc-cjs": "tsc --project tsconfig.cjs.json",
+    "tsc-esm": "tsc --project tsconfig.esm.json"
+  },
+  "keywords": [
+    "str-utils",
+    "distance"
+  ],
+  "author": "josoriom",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/eslint": "^9.6.1",
+    "@types/node": "^22.10.7",
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
+    "@vitest/coverage-v8": "^3.0.2",
+    "cheminfo-build": "^1.2.0",
+    "eslint": "^9.18.0",
+    "prettier": "^3.4.2",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.2"
+  }
+}
