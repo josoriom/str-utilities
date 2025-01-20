@@ -1,5 +1,5 @@
 {
-  "name": "str-utils",
+  "name": "str-utilities",
   "version": "0.1.0",
   "description": "",
   "main": "./lib-esm/index.js",
@@ -28,8 +28,8 @@
     "tsc-esm": "tsc --project tsconfig.esm.json"
   },
   "keywords": [
-    "str-utils",
-    "distance"
+    "levenshtein",
+    "string"
   ],
   "author": "josoriom",
   "license": "MIT",

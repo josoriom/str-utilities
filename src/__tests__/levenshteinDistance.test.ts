@@ -1,7 +1,7 @@
 import { it, expect, describe } from 'vitest';
 import { levenshteinDistance as ld } from '../index.js';
 
-describe('str-utils Distance - Simple test', () => {
+describe('Levenshtein Distance - Simple test', () => {
   // Simple test
   it('Distance for two identical (2-letter strings): "ab" vs "ab"', () => {
     const distance = ld('ab', 'ab');
@@ -89,7 +89,7 @@ describe('str-utils Distance - Simple test', () => {
   });
 });
 
-describe('str-utils Distance - Complex test', () => {
+describe('Levenshtein Distance - Complex test', () => {
   it('Distance with one substitution: "Lorem ipsum" vs "Lorem ipxum"', () => {
     // ipsum -> ipxum (s -> x)
     // Total = 1
