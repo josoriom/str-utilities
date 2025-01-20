@@ -26,7 +26,7 @@ console.log(ld('Dessert', 'Desert')); // => 1
 
 [npm-image]: https://img.shields.io/npm/v/str-utilities.svg
 [npm-url]: https://www.npmjs.com/package/str-utilities
-[ci-image]: https://github.com/josoriom/str-utilities/workflows/Node.js%20CI/badge.svg?branch=main
-[ci-url]: https://github.com/josoriom/str-utilities/actions?query=workflow%3A%22Node.js+CI%22
+[ci-image]: https://github.com/josoriom/str-utilities/actions/workflows/nodejs.yml/badge.svg?branch=main
+[ci-url]: https://github.com/josoriom/str-utilities/actions/workflows/nodejs.yml?branch=main
 [codecov-image]: https://img.shields.io/codecov/c/github/josoriom/str-utilities.svg
 [codecov-url]: https://codecov.io/gh/josoriom/str-utilities
